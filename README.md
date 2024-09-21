@@ -27,8 +27,14 @@ This will scan the /path/to/pdf/files directory, comparing all PDF files within 
 The program will return a list of file pairs that match the specified threshold, along with their cosine similarity scores.
 
 ```yaml
-File1.pdf and File2.pdf: Similarity = 0.92
-File3.pdf and File5.pdf: Similarity = 0.85
+Match 1:
+    File 1: The Lord of the Rings.pdf
+    File 2: The Hobbit.pdf
+    Similarity: 0.92
+Match 2:
+    File 1: The Fellowship of the Ring.pdf
+    File 2: The Eye of the World.pdf
+    Similarity: 0.87
 ```
 
 ## License

@@ -149,8 +149,10 @@ def display_matches(matches, similarities, filenames):
     None
     """
     for i, ((matchx, matchy), similarity) in enumerate(zip(matches, similarities)):
-        print('{}. {} and {}: Similarity = {:.2f}'.format(
-            i+1, filenames[matchx], filenames[matchy], similarity))
+        print('Match {}: '.format(i+1))
+        print('\tFile 1: {}'.format(filenames[matchx]))
+        print('\tFile 2: {}'.format(filenames[matchy]))
+        print('\tSimilarity: {:.2f}'.format(similarity))
 
 
 def main(folder, threshold):
