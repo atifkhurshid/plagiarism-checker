@@ -149,7 +149,7 @@ def display_matches(matches, similarities, filenames):
     None
     """
     for i, ((matchx, matchy), similarity) in enumerate(zip(matches, similarities)):
-        print('{}. {} and {}: Similarity = {}'.format(
+        print('{}. {} and {}: Similarity = {:.2f}'.format(
             i+1, filenames[matchx], filenames[matchy], similarity))
 
 
